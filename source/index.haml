@@ -44,12 +44,13 @@ language: en
   - Each version should:
     - List its release date in the above format.
     - Group changes to describe their impact on the project, as follows:
-      - `Added` for new features.
-      - `Changed` for changes in existing functionality.
-      - `Deprecated` for once-stable features removed in upcoming releases.
-      - `Removed` for deprecated features removed in this release.
-      - `Fixed` for any bug fixes.
-      - `Security` to invite users to upgrade in case of vulnerabilities.
+      - `Added` for new features. (+MINOR)
+      - `Changed` for changes in existing functionality. (+MAJOR)
+      - `Adjustments` for smaller changes in existing functionality (e.g. refactoring, optimized algorithm). (+MINOR or +PATCH)
+      - `Deprecated` for once-stable features removed in upcoming releases. (+MINOR)
+      - `Removed` for deprecated features removed in this release. (+MAJOR)
+      - `Fixed` for any bug fixes. (+PATCH)
+      - `Security` to invite users to upgrade in case of vulnerabilities. (+PATCH)
 
   ### How can I minimize the effort required?
   Always have an `"Unreleased"` section at the top for keeping track of any
